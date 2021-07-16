@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css';
+import { Container } from 'react-bootstrap';
+import Header from './components/Header';
+import Home from './components/Home';
+import TagsNeon from './components/TagsNeon';
+import TagsPure from './components/TagsPure'
+import PageBreakTest from './components/PageBreakTest'
+import LineSheet from './components/LineSheet';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+    <Header />
+    <main>
+    <Container>
+     <Route path='/neon' component={TagsNeon} />
+     <Route path='/pure' component={TagsPure} />
+     <Route path='/page' component={PageBreakTest} />
+     <Route path='/line' component={LineSheet} />
+     <Route path='/' component={Home} exact />
+     </Container>
+     </main>
+    </Router>
   );
 }
 
