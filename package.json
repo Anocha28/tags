@@ -1,6 +1,6 @@
 {
-  "homepage": "http://Anocha28.github.io/tags",
-  "name": "tags",
+  "homepage": "http://Anocha28.github.io/tag",
+  "name": "tag",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
