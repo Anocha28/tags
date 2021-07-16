@@ -12,7 +12,7 @@ export class Cards extends React.PureComponent {
             {chintexpure.map(t => (
                 <div className="col-4 p-2 page-break" key={t.style}>
                 <div className="card">
-                <img src={t.image} className="card-img-top p-1" alt={t.style} />
+                <img src={process.env.PUBLIC_URL + `/${t.image}`} className="card-img-top p-1" alt={t.style} />
                 <div className="card-body">
                     <h5 className="card-title">{t.style}</h5>
                     <p className="card-text">{t.description}</p>

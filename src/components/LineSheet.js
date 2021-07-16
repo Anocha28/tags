@@ -46,12 +46,12 @@ const LineSheet = () => {
                             <p className='m-0 p-0'><strong>Fabric Content: </strong>{l.content}</p>
                         </Col>
                     </Row>
-                    <Row className='mx-0 mt-3 mb-0 p-0'>
+                    <Row className='mx-0 my-2 p-0'>
                        <Col xl={6} lg={6} md={6} sm={6} xs={6} className='m-0 p-0'>
-                        <p><strong>Price </strong> CA $ {l.price}</p>
+                        <p className='m-0 p-0'><strong>Price </strong> CA $ {l.price}</p>
                        </Col> 
                        <Col xl={6} lg={6} md={6} sm={6} xs={6} className='m-0 p-0'>
-                        <p>Women: CA $ {l.wprice}</p>
+                        <p className='m-0 p-0'><strong>Women: </strong> CA $ {l.wprice}</p>
                        </Col>
                     </Row>
                     <Row className='m-0 p-0'>

@@ -10,7 +10,7 @@ const Tags = () => {
         {springairpure.map(t=> (            
                 <Col lg={4} md={4} sm={4} xs={4} className='d-flex my-1 px-1' key={t.style}>
                 <Card border='dark' className=' w-100 p-1' >
-                    <span className='d-flex justify-content-center'><Card.Img variant="top" src={t.image} className='w-25 pb-4 pt-5' /></span>
+                    <span className='d-flex justify-content-center'><Card.Img variant="top" src={process.env.PUBLIC_URL + `/${t.image}`} className='w-25 pb-4 pt-5' /></span>
                     <Card.Body className='m-0 p-0'>
                     <h3 className='pb-3 d-flex justify-content-center'>{t.season}</h3>
 
