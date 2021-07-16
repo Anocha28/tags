@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css';
 import { Container } from 'react-bootstrap';
 import Header from './components/Header';
@@ -11,7 +11,7 @@ import LineSheet from './components/LineSheet';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
     <Header />
     <main>
     <Container>
